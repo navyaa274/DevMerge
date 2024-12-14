@@ -1,0 +1,167 @@
+/* General Chatbot Container */
+.chatbot-container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #4CAF50;
+    color: rgb(4, 1, 1);
+    padding: 14px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #ddd;
+  }
+  
+  /* Chatbox */
+  .chatbox {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .message-container {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .user-bubble {
+    background-color: #DCF8C6;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bot-explanation {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .bot-point {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .bot-bubble {
+    background-color: #e1e1e1;
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .code-block {
+    width: 370px;
+    margin-top: 15px;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .copy-button {
+    /* position: absolute; */
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: rgb(11, 11, 11);
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    background-color: #45a049;
+  }
+  
+  .ace_editor {
+    width: 100% !important;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  /* Input Area */
+  .input-form {
+    display: flex;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    justify-content: space-between;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .input:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+  }
+  
+  .send-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    background-color: #45a049;
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #070707;
+    font-size: 14px;
+    padding: 10px 0;
+  }
